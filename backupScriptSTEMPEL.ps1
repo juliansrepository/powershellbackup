@@ -1,7 +1,7 @@
 $locations = @("Documents","Desktop","Downloads","Pictures") 
 #Bookmarks for chrome, firefox, safari 
 $ListUsr=Read-Host "This script requires the username parameter, type yes or y to have them all displayed. Otherwise press any key"
-  if ($ListUsr -eq "yes" –OR $ListUsr –eq "y"){    
+  if ($ListUsr -eq "yes" -OR $ListUsr -eq "y"){    
     Get-ChildItem -Path c:\Users\
 }
 $UserName=Read-Host "Please type the username you wish to back up"
